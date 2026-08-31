@@ -28,11 +28,52 @@ y = ''' --SYSTEM MENU--
 #area = lenght * width
 #print("The area of the rectangle is:", area)
 
-name = input("Please enter your name: ")
+''' name = input("Please enter your name: ")
 monthly_budget = float(input("Enter your monthly budget: "))
 d_foodcost = float(input("Enter your monthly food cost: "))
 mo_food = d_foodcost * 30
 rem = monthly_budget - mo_food
 text = "-- BUDGET SUMMARY --"
 print(text)
-print(name, "| Food", mo_food, "| Remaining", rem, "|")
+print(name, "| Food", mo_food, "| Remaining", rem, "|") '''
+
+#Question 9:
+''' radius = float(input("Enter the radius of the circle: "))
+area = 3.14159 * (radius ** 2)
+print("The area of the circle is:", area) '''
+
+#Question 10:
+''' celsius = float(input("Enter the temperature in Celsius: "))
+fahrenheit = ((celsius) * (9/5) + 32)
+print("The temperature in Fahrenheit is", fahrenheit) '''
+
+#Question 11:
+''' number_1 = float(input(" Please enter the first number: "))
+number_2 = float(input(" Please enter the second number: "))
+number_3 = float(input(" Please enter the third number: "))
+
+average = ((number_1 + number_2 + number_3) / 3)
+
+print ("The average of your three numbers is ", average)'''
+
+#Question 12:
+''' x = 5
+y = 7
+temp = x
+x = y
+y = temp
+print(x,y) '''
+
+#Question 13:
+price = float(input("Enter the price of the item "))
+discount = float(input("Enter the discount percent "))
+tax = float(input("Enter the tax percent "))
+
+discount_amount = price * (discount / 100)
+price_after_discount = price - discount_amount
+
+tax_amount = price_after_discount * (tax / 100)
+
+final_price = price_after_discount - tax_amount
+
+print("The final price of the item is:", final_price)

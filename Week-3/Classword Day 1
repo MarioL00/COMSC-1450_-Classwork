@@ -1,0 +1,13 @@
+'''seconds = 7800
+hrs = seconds // 3600
+print (hrs)
+
+sec = seconds % 3600
+print (sec)
+
+minutes = sec // 60
+print (minutes) '''
+
+name = "Mario" 
+score = 98
+print (f" Welcome {name}, your score is {score}.")
