@@ -1,0 +1,19 @@
+a = input("What is your name? ")
+b = input("Enter the number of items: ")
+c = float(input("Enter the price per item in USD: "))
+
+print(" ")
+
+print("Customer Profile:", a)
+print("USD Total: $", c * float(b))
+
+exchange_rate = c * 0.92
+print("EUR Total: €", round(exchange_rate * float(b), 2))
+
+print(" ")
+
+print("Thank you for shopping, have a great day!")
+
+print(" ")
+
+print("Transaction Complete. ") 
