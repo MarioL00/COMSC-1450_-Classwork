@@ -1,0 +1,116 @@
+#Question 1
+''' x = float(input("Please type a number: "))
+if(x>=0):
+    print("Positive")
+else:
+    print("Negative") '''
+
+#Question 2
+''' x = float(input("Please type a number: "))
+if(x%2 == 0):
+    print("Even")
+else:
+    print("Odd") '''
+
+#Question 3
+''' x = float(input("What is your age? "))
+if(x<=18):
+    print("Teenager")
+else:
+    print("Adult") '''
+
+#Question 4
+''' x = float(input("What is the temperature?: "))
+if(x>=80):
+    print("Hot")
+else:
+    print("Not Hot") '''
+
+#Question 5
+''' x = float(input("Choose a number: "))
+y = float(input("Choose another number: "))
+if(x>y):
+    print("This is the larger number: ",x)
+else:
+    print("This is the larger number: ",y) '''
+
+#Question 6
+''' score = float(input("What is your grade: "))
+ if(score < 0 or score > 100):
+    print("Invalid Grade")
+else:
+    print("Valid Grade") '''
+
+#Question 7
+''' x = float(input("Choose a number: "))
+y = float(input("Choose another number: "))
+if(x==y):
+    print("The numbers are equal")
+else:
+    print("The numbers are not equal") '''
+
+#Question 8
+''' pin = int(input("Please enter the PIN: "))
+if(pin == 1234):
+    print("Access granted")
+else:
+    print("Access denied") '''
+
+#Question 9
+''' temp = float(input("What is the temperature? "))
+if(temp>=100):
+    print("Very Hot")
+elif(temp>=80 and temp<100):
+    print("Hot")
+elif(temp>=60 and temp<80):
+    print("Warm")
+else:
+    print("Cold") '''
+
+#Question 10
+''' grade = float(input("what is your grade? "))
+if(grade>=90):
+    print("A")
+elif(grade>=80 and grade<90):
+    print("B")
+elif(grade>=70 and grade<80):
+    print("C")
+elif(grade>=60 and grade<70):
+    print("D")
+else:
+    print("F") '''
+
+#Question 11
+''' x = float(input("Type a number: "))
+y = float(input("Type a second number: "))
+z = float(input("Type a third number: "))
+if(x>y and x>z):
+    print("The largest number is: ",x)
+elif(y>x and y>z):
+    print("The largest number is: ",y)
+else:
+    print("The largest number is: ",z) '''
+
+#Question 12
+''' x = float(input("What is your age? "))
+if(x<13):
+    print(" Your total is $5")
+elif(x>=13 and x<18):
+    print("Your total is $8")
+elif(x>=18 and x<65):
+    print("Your total is $12")
+else:
+    print("Your total is $7") '''
+
+#Question 13
+''' x = float(input("Type a number: "))
+y = float(input("Type a second number: "))
+z = input("Type an operator (+, -, *, /): ")
+if(z == "+"):
+    print(x+y)
+elif(z == "-"):
+    print(x-y)
+elif(z == "*"):
+    print(x*y)
+elif(z == "/"):
+    print(x/y) '''

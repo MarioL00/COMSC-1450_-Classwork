@@ -1,0 +1,21 @@
+''' x = 20
+if (x>= 60):
+    print("Passed")
+else:
+    print("Failed") '''
+
+''' age = int(input("Enter your age: "))
+if (age > 13 and age < 19):
+    pass
+    #print("You are a teenager.") '''
+
+''' x = int(input("Enter your age: "))
+if(x>=0):
+    if(x<=10):
+       print("In Range")
+    else:
+         print("Too Large")
+else:
+    print("Too Small") '''
+
+
