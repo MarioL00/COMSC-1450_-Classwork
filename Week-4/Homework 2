@@ -1,0 +1,52 @@
+# Question 1
+name = input("Please enter your name: ")
+gpa = float(input("Please enter your GPA: "))
+sat = float(input("Please enter your SAT score: "))
+
+if(gpa < 0.0 or gpa > 4.0):
+    print("Invalid GPA. Please enter a valid GPA. ")
+if(sat < 0 or sat > 1600):
+    print("Invalid SAT score. Please enter a valid SAT score. ")
+
+if(gpa >= 3.0 and sat >= 1100 or gpa >= 3.5 and sat >= 1000):
+    print(f"Congratulations {name}! You have been accepted! ")
+else:
+    print(f"Sorry {name}, you have been rejected. ") 
+
+# Question 2
+print("Welcome to Express Shipping! We deliver to the whole world! ")
+member = input("Are you a current premium member? ")
+weight = float(input("Please enter the weight of your package: "))
+
+if(member == "yes" and weight >0 and weight <= 5):
+    print("Thank you for being a premium member! Your total is $0! ")
+elif(weight <= 0):
+    print("Invalid weight. Sorry we can't help you this time.")
+elif(weight <= 2):
+    print("Your total is $5.")
+elif(weight > 2 and weight <= 5):
+    print("Your total is $10.")
+elif(weight > 5 and weight <= 10):
+    print("Your total is $15.")
+elif(weight > 10):
+    print("Your total is $25.")
+
+print("Thank you for shipping with us!") 
+
+# Question 3
+print("Welcome to Mario's Pizzeria!")
+order = float(input("Please enter the order amount: "))
+distance = float(input("Please enter the delivery distance: "))
+
+if(order >= 50):
+    print(f"Your total is, ${order}")
+elif(order >= 30 and order <= 49.99 and distance <= 5):
+    print(f"Your total is, ${order + 3}")
+elif(order < 30 and distance <= 5):
+    print(f"Your total is, ${order + 5}")
+elif(order >= 30 and order <= 49.99 and distance > 5):
+    print(f"Your total is, ${order + 5}")
+elif(order < 30 and distance > 5):
+    print(f"Your total is, ${order + 7}")
+
+print("Thank you for ordering from Mario's Pizzeria! ")
