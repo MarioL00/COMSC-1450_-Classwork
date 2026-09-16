@@ -1,0 +1,33 @@
+#Question 18
+''' word = input("Please enter a word: ")
+count = 0
+
+for i in word:
+    if(i == "a"):
+        count = count + 1
+
+print(f"Number of a's: {count}") '''
+
+#Question 19
+''' for i in range(3):
+    for j in range(4):
+        print(i, end=" ")
+    print() '''
+
+#Question 20
+''' for i in range(4):
+    for j in range(4):
+        print("*", end=" ")
+    print() '''
+
+#Question 21
+''' for i in range(6):
+    for j in range(i):
+        print(j, end=" ")
+    print() '''
+
+#Question 22
+for i in range(6):
+    for j in range(i):
+        print("*", end=" ")
+    print() 

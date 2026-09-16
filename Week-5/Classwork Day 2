@@ -1,0 +1,57 @@
+''' print("Ok", end=" ")
+print("UST")
+print("TX") '''
+
+
+''' word = "Houston"
+
+for i in word:
+    print(i, end=" ") '''
+
+''' word = "Houston"
+count = 0
+
+for i in word:
+    if(i == "o"):
+        count = count + 1
+
+print(count) '''
+
+''' word = "Houston"
+count = 0
+
+for i in word:
+    if(i in "AEIOUaeiou"):
+        count = count + 1
+
+print(f"Number of vowels: {count}") '''
+
+''' for i in range(4):
+    print("UST")
+    for i in range(3):
+        print("*", end=" ")
+    print() '''
+
+''' for i in range(4):
+    for j in range(3):
+        print(i,j, end=" ")
+    print() '''
+
+''' for i in "CatXDog":
+    if i == "X":
+        break
+    print(i) '''
+
+'''for i in [10, 5, -2, 3, -8, 9]:
+    if i < 0:
+        continue
+    print(i) '''
+
+word = input("Please enter a word: ")
+count = 0
+
+for i in word:
+    if(i == "a"):
+        count = count + 1
+
+print(f"Number of a's: {count}")

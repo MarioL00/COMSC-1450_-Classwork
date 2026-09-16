@@ -1,0 +1,68 @@
+#Question 1
+''' c = 0
+
+while(c < 11):
+    print(c)
+    c = c + 1 '''
+
+#Question 2
+''' c = 2
+
+while(c <= 20):
+    print(c)
+    c = c + 2 '''
+
+#Question 3
+''' num = int(input("Please type a number to count down from: "))
+
+while(num >= 0):
+    print(num)
+    num = num - 1 '''
+
+#Question 4
+''' c = 2
+while(c <= 30):
+    print(c, c*c)
+    c = c + 2 '''
+
+#Question 5
+''' x = input("Enter the correct password: ")
+while(x != "UST"):
+    print ("Wrong Password. Please try again. ")
+    x = input("Enter the correct password: ") ''' 
+
+#Question 6
+''' x = float(input("Enter the secret number from 1 to 100: "))
+while(x != 22):
+    if(x < 22):
+        print("Wrong number. Too low. Please try again. ")
+    else:
+        print("Wrong number. Too high. Please try again. ")
+    x = float(input("Enter the secret number from 1 to 100: ")) '''
+
+#Question 7
+''' word = input("Please enter a word: ")
+while(word != "stop"):
+    print("Wrong word. Please try again. ")
+    word = input("Please enter a word: ") 
+
+print("Program Ended. ") '''
+
+#Question 8
+''' sum = 0
+x = int(input("Enter a number or 0 to stop. "))
+while(x != 0):
+    sum = sum + x
+    x = int(input("Enter a number or 0 to stop. "))
+print("The total is:", sum) '''
+
+#Question 9
+''' sum = 0
+x = float(input("Enter any number or 0 to stop. "))
+while(x != 0):
+    sum = sum + x
+    x = float(input("Enter any number or 0 to stop. "))
+print("The total is:", sum) '''
+
+#Question 10
+x = int(input("Enter any number or 0 to stop. "))
