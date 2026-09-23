@@ -1,0 +1,44 @@
+#Question 1
+''' name = input("Please enter your name: ")
+print("Welcome to the course,", name + "!") '''
+
+#Question 2
+''' f_name = input("Please enter your first name: ")
+l_name = input("Please enter your last name: ")
+print("Hello", l_name + ",", f_name) '''
+
+#Question 3
+''' x = 32
+y = "Sara"
+z = 3.5
+print(type(x))
+print(type(y))
+print(type(z)) '''
+
+#Question 4
+''' print("A\nB\nC\nD\nE\nF") '''
+
+#Question 5
+''' file_path = print("C:\\Users\\rick\\Documents")
+
+print("""- SYSTEM MENU -\n 1. Open File\n 2. Save File""")
+print("The professor said, 'Make sure you escape matching quotes!'") '''
+
+#Question 6
+''' first_item = "Keyboard"
+total_cost = 45.00
+class_1 = "Electronics"
+
+item_age = 2
+
+
+print(first_item, total_cost, class_1, "Item age is:",item_age) '''
+
+#Question 7
+length = float(input("Please enter the length: "))
+width = float(input("Please enter the width: "))
+
+area = length * width
+
+print("Area = ",area)
+
