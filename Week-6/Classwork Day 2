@@ -1,0 +1,43 @@
+''' import random
+
+#print(random.random())
+#print(random.randint(1,10))
+#print(random.randrange(1,5,2))
+#print(random.choice("Houston"))
+random.seed(7)
+print(random.randint(1,100))
+
+import math
+math.sqrt()
+
+from math import sqrt
+sqrt()
+
+import math as m
+m.sqrt()
+m.pow() '''
+
+
+''' def welcome(x):
+    print("Welcome",x, "to UST")
+    print("2026")
+
+welcome("Sara")
+welcome("Dave")
+welcome("Mario") '''
+
+''' def total(x,y):
+    print(x+y)
+
+total(2,3)
+total(6,4) '''
+
+''' def total(x,y):
+    print(x + y)
+total(2,3) '''
+
+def total2(x,y):
+    return x + y
+z = total2(12,3)
+
+print(z + 2)

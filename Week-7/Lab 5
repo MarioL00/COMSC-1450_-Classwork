@@ -1,0 +1,46 @@
+#Question 1
+''' def count_d(n):
+    if n == 0:
+        return
+    print(n)
+    count_d(n-1)
+    
+count_d(5)
+print("Liftoff") '''
+
+#Question 2
+''' def print_range(a, b):
+    if a > b:
+        return
+    print(a)
+    print_range(a + 1, b)
+
+print_range(1,5) '''
+
+#Question 3
+''' def fact_add(n):
+    if n == 0:
+        return n
+    return n + fact_add(n - 1)
+
+print(fact_add(5)) '''
+
+#Question 4
+''' def count_down_evens(n):
+    if n < 0:
+        print("Done!")
+        return 
+    print(n)
+    count_down_evens(n - 2)
+
+count_down_evens(12) '''
+
+#Question 5
+''' def power_of_two(n):
+    if n == 0:
+        return 1
+    
+    else:
+        return 2 * power_of_two(n-1)
+
+print(power_of_two(3)) '''

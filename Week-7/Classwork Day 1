@@ -1,0 +1,18 @@
+''' def cost_ship (w,d):
+    cost = (w*0.5) + (d*0.10)
+    print(cost)
+
+cost_ship(10,21)
+cost_ship(16,30)
+cost_ship(15,9) '''
+
+''' def add (n):
+    sum = 0
+    for i in range(n):
+        sum = sum + i
+    print(sum)
+
+add(10)
+add(20)
+add(5) '''
+

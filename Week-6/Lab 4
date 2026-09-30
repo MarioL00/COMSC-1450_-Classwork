@@ -13,12 +13,115 @@ print(dis)
 #print(math.hypot(x2-x1)**2 + (y2-y1)**2) '''
 
 #Question 2
-import math
+''' import math
 
 angle = int(input("Please input an angle: "))
 
 radians = math.radians(angle)
 
-print(math.sin(radians), math.cos(radians)) 
+print(math.sin(radians), math.cos(radians)) '''
 
 #Question 3
+''' import random
+print(random.random())
+print(random.choice('ABCDEF'))
+print(random.randint(10,50)) '''
+
+#Question 4
+''' def show_welcome_banner():
+    print("******************************")
+    print("Welcome to Python Programming!")
+    print("******************************")
+
+show_welcome_banner()
+show_welcome_banner()
+show_welcome_banner() '''
+
+#Question 5
+''' username = input("Please type your name: ")
+def greet_user(username):
+    print("Hello",username,"welcome back!")
+
+greet_user(username) '''
+
+#Question 6
+''' number = int(input("Enter a number: "))
+
+def even_or_odd(number):
+    if number % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+
+even_or_odd(number) '''
+
+#Question 7
+''' def dollars_to_euros(dollar_amount):
+    euro_total = dollar_amount * 0.92
+    return euro_total
+
+euro_total = dollars_to_euros(50)
+print(euro_total) '''
+
+#Question 8
+''' def calculate_shipping(package_weight, distance_miles):
+    cost = (package_weight * 0.5) + (distance_miles * 0.1)
+    return cost
+
+cost = calculate_shipping(12, 250)
+print("$",cost) '''
+
+#Question 9
+''' def vowels(word):
+    count = 0
+    for letter in word:
+        if letter in "AEIOUaeiou":
+            count += 1
+    return count
+
+print(vowels("Apple")) '''
+
+#Question 10
+''' def get_rectangle (l,w):
+    area = (l * w)
+    return(area)
+
+print(get_rectangle(10,2)) '''
+
+#Question 11
+''' def maximum (a,b):
+    if a > b:
+        return(a)
+    else:
+        return(b)
+
+print(maximum(110,100)) '''
+
+#Question 12
+''' def is_even(n):
+    if(n %2 == 0):
+        return(True)
+    else:
+        return(False)
+    
+print(is_even(48))
+print(is_even(51))
+print(is_even(6)) '''
+
+#Question 13
+''' from math import pi
+def circle_area(radius):
+    area = pi * radius**2
+    return(area)
+
+print(circle_area(5)) '''
+
+#Question 14
+def factorial(n):
+    total = 1
+    for i in range(1, n + 1):
+        total *= i
+    return(total)
+
+print(factorial(5))
+print(factorial(4))
