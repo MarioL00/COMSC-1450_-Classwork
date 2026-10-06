@@ -1,0 +1,53 @@
+#Example 1
+''' add = lambda x: x+2
+print(add(5))'''
+
+#Example 2
+''' check = lambda x: "even" if x % 2 == 0 else "odd"
+print(check(9)) '''
+
+#Example 3
+''' compare = lambda x, y: "x is greater" if x > y else "y is greater"
+print(compare(16,15)) '''
+
+#Question 1
+''' even_odd = lambda x: "even" if x % 2 == 0 else "odd"
+print(even_odd(21)) '''
+
+#Question 2
+''' positive_negative = lambda x: "positive" if x % 2 == 0 else "negative"
+print(positive_negative(21)) '''
+
+#Question 3
+''' addition = lambda x,y: x + y
+print(addition(11, 11)) '''
+
+#Question 4
+''' from math import pi
+area = lambda r: pi * r ** 2
+print(area(2)) '''
+
+#Example 4
+''' def add(x,y):
+    return x + y
+def sub(x,y):
+    return x - y
+
+def main():
+    print("") '''
+
+#Example 5
+x = "Houston"
+''' print(x.upper())
+print(x.lower())
+print(x.startswith("O"))
+print(x.endswith("n"))
+
+print(len(x))
+print(x[0])
+print(x[-1]) #or print(x[6])
+
+#print(dir(x)) '''
+
+for i in x:
+    print(i)
