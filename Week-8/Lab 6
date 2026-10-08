@@ -11,4 +11,34 @@ if validate_access_code(raw_code):
     print("Access granted")
 else:
     print("Access denied") '''
- 
+
+#Question 2
+
+#Question 3
+
+#Question 4
+''' file = open("/Users/mario1/py/COMSC-1450_-Classwork/Week-8/tt.txt",'r')
+
+t = 0 
+c = 0 
+for i in file:
+    t = t + int(i)
+    c = c + 1
+
+average = t / c
+
+print(average)
+
+file.close() '''
+
+#Question 5
+file = open("/Users/mario1/py/COMSC-1450_-Classwork/Week-8/tt.txt",'r')
+
+t = 0 
+for i in file:
+    if int(i) % 2 == 0:
+        t = t + int(i)
+
+print(t)
+
+file.close()

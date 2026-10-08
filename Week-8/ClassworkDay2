@@ -1,0 +1,18 @@
+
+file = open("/Users/mario1/py/COMSC-1450_-Classwork/Week-8/tt.txt",'a')
+
+t = 0 
+for i in file:
+    t = t + int(i)
+print(t)
+
+file.close()
+
+''' file.write("python\n")
+file.write("2026\n")
+file.write("ust\n")
+file.close() '''
+
+''' file.write(input("What is your name?"))
+
+file.close() '''
