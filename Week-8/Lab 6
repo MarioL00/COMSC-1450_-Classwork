@@ -32,7 +32,7 @@ print(average)
 file.close() '''
 
 #Question 5
-file = open("/Users/mario1/py/COMSC-1450_-Classwork/Week-8/tt.txt",'r')
+''' file = open("/Users/mario1/py/COMSC-1450_-Classwork/Week-8/tt.txt",'r')
 
 t = 0 
 for i in file:
@@ -41,4 +41,13 @@ for i in file:
 
 print(t)
 
-file.close()
+file.close() '''
+
+#Question 7
+with open("/Users/mario1/py/COMSC-1450_-Classwork/Week-8/tt.txt", "r") as infile:
+
+    with open("/Users/mario1/py/COMSC-1450_-Classwork/Week-8/tt2.txt", "w") as outfile:
+        for i in infile:
+            outfile.write(i.upper())
+
+#Question 8

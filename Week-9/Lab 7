@@ -1,0 +1,50 @@
+#Question 1
+''' list = [1,2,3,4,5]
+
+for i in list:
+    print (i) '''
+
+#Question 2
+''' list = [1,2,3,4,5]
+
+print(list[0])
+print(list[-1]) '''
+
+#Question 3
+
+#Question 4
+''' list = [1,2,3,4,5]
+
+total = 0
+for i in list:
+    total = total + i
+
+print(total) '''
+
+#Question 5
+''' list = [1,2,3,4,5]
+
+total = 0
+for i in list:
+    total = total + i
+    average = total / len(list)
+
+print(average) '''
+
+#Question 6
+''' list = [1,2,3,4,5]
+
+max = list[0]
+min = list[0]
+
+for i in list:
+    if max < i:
+        max = i
+for i in list:
+    if min > i:
+        min = i
+
+print(max)
+print(min) '''
+
+#Question 7
