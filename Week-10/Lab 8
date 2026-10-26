@@ -1,0 +1,46 @@
+#Question 1
+d = {"Apples": 50, "Bananas": 30, "Oranges":25}
+''' d.update({"Bananas": 45})
+d["Mangoes"] = 15 
+d.pop("Oranges")
+print(d) '''
+
+#Question 2
+''' d = {"Apples": 50, "Bananas": 30, "Oranges":25}
+def get_stock(inventory,item):
+    return inventory.get(item,"Not in Stock")
+
+print(get_stock(d,"Kiwi"))
+print(get_stock(d,"Bananas")) '''
+
+#Question 3
+''' k = ["Name", "Age", "Role"]
+v = ["Alex", 24, "Developer"]
+
+d = dict(zip(k,v))
+print(d) '''
+
+#Question 4 
+''' d = {"Sara": 56, "Dave": 27, "John": 98}
+for k,v in d.items():
+    if v > 50:
+        print(k,v) '''
+
+#Question 5
+''' d =  {"A": 1, "B": 2, "C": 3}
+d2 = {}
+for k,v in d.items():
+    d2[v] = k
+
+print(d2) '''
+
+#Question 6
+''' d = {"theme": "light","fontsize": 12, "show_tips": True}
+u = {"theme":"dark", "fontsize": 14}
+
+d.update(u)
+#or
+d.update({"theme": "dark"})
+d.update({"fontsize": 14})
+
+print(d) '''

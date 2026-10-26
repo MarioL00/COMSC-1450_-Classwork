@@ -1,0 +1,40 @@
+''' courses = ["Py", "Java", "C++"]
+x = [1,2,3,4,5,6,7, "Pyth", 10.25]
+x.remove("Pyth")
+x.insert(3, "TX")
+x.append("UST")
+x[4] = 90
+print(x) '''
+
+
+''' for i in x:
+    print(i) '''
+
+
+''' def total(x):
+    total = 0
+    for i in x:
+        total = total + i
+    return total
+
+list = [1,2,3,4,5]
+
+print(total(list)) '''
+
+
+''' y = [x**2 for x in range(5)]
+print(y) '''
+
+''' x = (1,2,3,4,5,6)
+print(x[2])
+print(x[2:])
+for i in x:
+    print(i) '''
+
+x = (1,2,3,4,5,6)
+
+y = list(x)
+print(y)
+y.append(10)
+x = tuple(y)
+print(x)

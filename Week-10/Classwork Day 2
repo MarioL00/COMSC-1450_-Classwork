@@ -1,0 +1,66 @@
+''' def sum(*x):
+    total = 0
+
+    for i in x:
+        total += i
+    return total
+
+print(sum(1,2))
+print(sum(1,2,3))
+print(sum(1,2,3,4,5)) '''
+
+
+''' d = {"Name": "Sara","Age":27, "Score":98}
+print(d)
+print(d["Name"])
+print(d["Age"])
+d["Name"] = "Dave"
+print(d)
+d["Score"] = 9
+print(d)
+d["Program"] = "CS"
+print(d)
+print(d["Name"])
+print(d.get("Name"))
+print(d.get("School"))
+print(d.get("School", "Not Found"))
+print("******") 
+d.update({"Age": 17})
+print(d)
+d.update({"State":"TX"})
+print(d)
+print(len(d))
+d.pop("Score")
+print(d)
+d.popitem()
+print(d)
+del(d["Name"]) '''
+
+
+''' d = {"Name": "Sara","Age":27, "Score":98}
+print(d)
+
+for i in d:
+    print(i)
+    print(d[i])
+for i in d.keys():
+    print(i)
+for i in d.values():
+    print(i)
+
+    for k,v in d.items():
+        print(k,v) '''
+
+
+s = {1,2,3,6,4,5}
+t = {7,8,9}
+print(s)
+
+s.add(100)
+s.update([5,2,7,9])
+print(s)
+s.remove(100)
+print(s)
+s.pop() #will delete the last item (in order)
+
+print(s | t ) 

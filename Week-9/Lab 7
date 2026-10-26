@@ -31,7 +31,7 @@ for i in list:
 
 print(average) '''
 
-#Question 6
+#Question 6/7
 ''' list = [1,2,3,4,5]
 
 max = list[0]
@@ -47,4 +47,87 @@ for i in list:
 print(max)
 print(min) '''
 
-#Question 7
+#Question 8
+''' list = [1,2,3,4,5,6]
+
+even = []
+odd = []
+
+for i in list:
+    if i % 2 == 0:
+        even = even + 1
+    else:
+        odd = odd + 1
+
+print(even)
+print(odd) '''
+
+#Question 9
+''' list = [1,2,3,3,4,5]
+
+for i in list:
+    if i is not in list:
+        x.append(i)
+
+print(list) '''
+
+#Question 10
+''' x = [1,2,3,4,5]
+y = [6,7,8,9,10]
+
+x.extend(y)
+print(x)
+# or
+x = x + y
+print(x) '''
+
+#Question 10.2
+''' list = [1,2,-4,5,-1,6]
+
+pos = []
+neg = []
+
+for i in list:
+    if i < 0:
+        neg.append(i)
+    else:
+        pos.append(i)
+
+print(pos)
+print(neg) '''
+
+#Question 11
+''' list = ["Python", "Happy", "Pen", "Yes"]
+
+n_list = []
+
+for i in list:
+    if len(i) > 4:
+        n_list.append(i)
+
+print(n_list) '''
+
+#Question 12
+''' y = [x**2 for x in range(4)]
+print(y) '''
+
+#Question 13
+''' tup_1 = (1,2,3,4,5)
+
+y = list(tup_1)
+y.append(9)
+tup_1 = tuple(y)
+print(tup_1) '''
+
+#Question 14
+''' tup_1 = (1,2,3,4,5)
+
+y = list(tup_1)
+y.remove(2)
+tup_1 = tuple(y)
+print(tup_1) '''
+
+#Question 15
+''' tup_1 = (1,2,3,4,5)
+
+print( 2 in tup_1) '''
