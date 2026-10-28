@@ -1,0 +1,128 @@
+#Example 1
+''' import tkinter as tk    
+
+def on_click():
+    x = "You have picked "
+    if cv.get() == 1:
+        x = x + "Phyton"
+    if cv1.get() == 1:
+        x = x + " Java"
+    if cv2.get() == 1:
+        x = x + " C++"
+    l2.config(text = x)
+
+root = tk.Tk()
+root.title("GUI")
+root.geometry("400x400")
+
+l1 = tk.Label(root, text = "Pick a course: ")
+l1.pack()
+
+cv = tk.IntVar()
+cv1 = tk.IntVar()
+cv2 = tk.IntVar()
+
+cb1 = tk.Checkbutton(root, text = "Python", variable = cv)
+cb1.pack()
+
+cb2 = tk.Checkbutton(root, text = "Java", variable = cv1)
+cb2.pack()
+
+cb3 = tk.Checkbutton(root, text = "C++", variable = cv2)
+cb3.pack()
+
+b = tk.Button(root, text = "Ok", command = on_click)
+b.pack()
+
+l2 = tk.Label(root)
+l2.pack()
+
+root.mainloop() '''
+
+
+#Example 2
+''' import tkinter as tk
+
+def on_click():
+    x = float(e.get())
+    if r.get() == "Euro":
+        result = float(x * 0.92)
+    elif r.get() == "CAD":
+        result = x * 0.52
+    elif r.get() == "AUD":
+        result = x * 0.62
+    l2.config(text = result)
+
+root = tk.Tk()
+root.title("GUI")
+root.geometry("400x400")
+
+l1 = tk.Label(root, text = "Enter an amount in USD: ")
+l1.pack()
+
+e = tk.Entry(root)
+e.pack()
+r = tk.StringVar()
+
+rb1 = tk.Radiobutton(root, text = "Euro", variable = r, value = "Euro")
+rb1.pack()
+
+rb2 = tk.Radiobutton(root, text = "CAD", variable = r, value = "CAD")
+rb2.pack()
+
+rb3 = tk.Radiobutton(root, text = "AUD", variable = r, value = "AUD")
+rb3.pack()
+
+b = tk.Button(root, text = "Ok", command = on_click)
+b.pack()
+
+l2 = tk.Label(root)
+l2.pack()
+
+root.mainloop() '''
+
+
+#Example 3
+import tkinter as tk
+from tkinter import messagebox
+
+def on_click():
+    if e.get().strip() == "":
+        messagebox.showwarning("Error", "Please enter a value ")
+    else:
+        x = float(e.get())
+        if r.get() == "Euro":
+            result = float(x * 0.92)
+        elif r.get() == "CAD":
+            result = x * 0.52
+        elif r.get() == "AUD":
+            result = x * 0.62
+        l2.config(text = result)
+
+root = tk.Tk()
+root.title("GUI")
+root.geometry("400x400")
+
+l1 = tk.Label(root, text = "Enter an amount in USD: ")
+l1.pack()
+
+e = tk.Entry(root)
+e.pack()
+r = tk.StringVar()
+
+rb1 = tk.Radiobutton(root, text = "Euro", variable = r, value = "Euro")
+rb1.pack()
+
+rb2 = tk.Radiobutton(root, text = "CAD", variable = r, value = "CAD")
+rb2.pack()
+
+rb3 = tk.Radiobutton(root, text = "AUD", variable = r, value = "AUD")
+rb3.pack()
+
+b = tk.Button(root, text = "Ok", command = on_click)
+b.pack()
+
+l2 = tk.Label(root)
+l2.pack()
+
+root.mainloop()

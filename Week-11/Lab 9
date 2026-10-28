@@ -60,3 +60,88 @@ l3 = tk.Label(root, text = "")
 l3.grid(row = 2, column = 0)
 
 root.mainloop() '''
+
+
+#Question 3
+''' import tkinter as tk    
+
+def on_click():
+    x = "You have picked "
+    if cv.get() == 1:
+        x = x + "Vegeterian"
+    if cv1.get() == 1:
+        x = x + " Gluten-Freee"
+    if cv2.get() == 1:
+        x = x + " Nut-Free"
+    l2.config(text = x)
+
+root = tk.Tk()
+root.title("GUI")
+root.geometry("400x400")
+
+l1 = tk.Label(root, text = "Select your dietary preferences: ")
+l1.pack()
+
+cv = tk.IntVar()
+cv1 = tk.IntVar()
+cv2 = tk.IntVar()
+
+cb1 = tk.Checkbutton(root, text = "Vegeterian", variable = cv)
+cb1.pack()
+
+cb2 = tk.Checkbutton(root, text = "Gluten-Free", variable = cv1)
+cb2.pack()
+
+cb3 = tk.Checkbutton(root, text = "Nut-Free", variable = cv2)
+cb3.pack()
+
+b = tk.Button(root, text = "Submit", command = on_click)
+b.pack()
+
+l2 = tk.Label(root)
+l2.pack()
+
+root.mainloop() '''
+
+
+#Question 4
+''' import tkinter as tk
+
+def on_click():
+    result = 0
+    x = float(e.get())
+    if r.get() == "Standard":
+        result = x +5
+    elif r.get() == "Express":
+        result = x + 15
+    elif r.get() == "Overnight":
+        result = x + 30
+    l2.config(text =result)
+
+root = tk.Tk()
+root.title = ("GUI")
+root.geometry = ("400x400")
+
+l1 = tk.Label(root, text = "Enter your order subtotal: ")
+l1.pack()
+
+e = tk.Entry(root)
+e.pack()
+r = tk.StringVar()
+
+rb1 = tk.Radiobutton(root, text = "Standard: $5.00", variable = r, value = "Standard")
+rb1.pack()
+
+rb2 = tk.Radiobutton(root, text = "Express: $15.00", variable = r, value = "Express")
+rb2.pack()
+
+rb3 = tk.Radiobutton(root, text = "Overnight: $30.00", variable = r, value = "Overnight")
+rb3.pack()
+
+b1 = tk.Button(root, text = "Calculate Total", command = on_click)
+b1.pack()
+
+l2 = tk.Label(root)
+l2.pack()
+
+root.mainloop() '''
