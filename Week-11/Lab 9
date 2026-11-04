@@ -188,4 +188,4 @@ root.config(menu = main_menu)
 l = tk.Label(root, text = "No color selected")
 l.pack()
 
-root.mainloop()
+root.mainloop() 

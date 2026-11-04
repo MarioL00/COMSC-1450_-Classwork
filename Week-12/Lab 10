@@ -1,0 +1,64 @@
+#Question 1
+''' def safe_divide():
+    while True:
+        try:
+            x = int(input("Enter a numerator: "))
+            y = int(input("Enter a denominator: "))
+            z = x / y
+
+        except ValueError:
+            print("Please enter a valid number.")
+        except ZeroDivisionError:
+            print("Please enter a valid number.")
+        else:
+            print(z)
+            break
+
+safe_divide() '''
+
+
+#Question 2
+''' items = ["Laptop", "Headphones", "Backpack", "Water Bottle"]
+try:
+    index = int(input("Enter the index of the item you want to view: "))
+    print(items[index])
+except ValueError as e:
+    print(e)
+except IndexError as e:
+    print(e)
+except Exception as e:
+    print(e) '''
+
+
+#Question 3
+file = None
+try:
+    file = open("grades.txt", "r")
+
+    total = 0
+
+    for i in file:
+        total += int(i)
+except FileNotFoundError as e:
+    print(e)
+except ValueError as e:
+    print(e)
+else:
+    print(total)
+finally:
+    file.close()
+
+#Question 4
+''' account_balance = 500
+
+try:
+    transaction = int(input("Enter the amount you want to withdraw: "))
+    if transaction <= 0:
+        raise ValueError("Withdrawal must be greater than $0. ")
+    if transaction > account_balance:
+        raise ValueError("Insufficient funds.")
+except ValueError as e:
+    print(e)
+else:
+    account_balance = account_balance - transaction
+    print(account_balance) '''

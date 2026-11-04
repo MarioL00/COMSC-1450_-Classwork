@@ -1,0 +1,12 @@
+''' try:
+    x = int(input("Enter a num: "))
+    y = 12 / x
+except ValueError:
+    print("Invalid value. ")
+except ZeroDivisionError:
+    print("Can't divide by zero. ")
+print("UST") '''
+
+
+x = int(input("Enter a num : "))
+y = 12 / x 
