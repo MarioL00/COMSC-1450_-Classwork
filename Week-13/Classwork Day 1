@@ -1,0 +1,21 @@
+class Student:
+    def __init__(self,n,a, gp):
+        self.name = n
+        self.age = a
+        self.gpa = float(gp)
+
+    def display(self):
+        print("This is the student's info: ", self.name, self.age, self.gpa)
+
+    def calculate_gpa(self):
+        return self.gpa * 2
+
+s1 = Student("Sara", 18, 3.5)
+s2 = Student("Dave", 19, 3.8)
+s3 = Student("John", 21, 2.9)
+s1.name = "Lara"
+
+s1.display()
+s2.display()
+s3.display()
+print(s1.calculate_gpa())
