@@ -1,0 +1,7 @@
+f[FITNESS] Activity: {activity} | Calories Burned: {calories}
+f[FITNESS] Activity: {activity} | Calories Burned: {calories}
+[FITNESS] Activity: Running | Calories Burned: 240
+[FLIGHT] Base: $200.00 | Total Fare: $270.00
+[FITNESS] Activity: Swimming | Calories Burned: 1440
+[FITNESS] Activity: Swimming | Calories Burned: 1440
+[FLIGHT] Base: $12251.21 | Total Fare: $12301.21

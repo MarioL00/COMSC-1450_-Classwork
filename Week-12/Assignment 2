@@ -1,10 +1,70 @@
 import tkinter as tk
+from tkinter import messagebox
+
 def show_page(frame):
     fitness_page.pack_forget()
     flight_page.pack_forget()
+    l1.pack_forget()
     frame.pack(fill = "both", expand = True, padx = 20, pady = 20)
 
+def reset_logs():
+    file = open("user_logs.txt", "w")
+    file.close()
+    status_label.config(text = "System Activity Logs Reset Successfully!", fg = "darkgreen")
 
+def log_workout():
+    activity = activity_entry.get()
+    duration = duration_entry.get()
+    if activity == "" or duration == "":
+        messagebox.showwarning("Missing Information", "Please complete all required fields!")
+        return
+    else:
+        try:
+            minutes = int(duration)
+            if minutes <= 0:
+                result_label.config(text = "Duration must be positive! ", fg = "red")
+                return
+            if intensity.get() == "Low":
+                calories = minutes * 5
+            elif intensity.get() == "Medium":
+                calories = minutes * 8
+            else:
+                calories = minutes * 12
+        except ValueError:
+            result_label.config(text = "Please enter a valid number! ", fg = "red")
+            return
+        result_label.config( text = f"Logged: {activity} for {calories} Calories!", fg = "green")
+
+        file = open ("user_logs.txt", "a")
+        file.write(f"[FITNESS] Activity: {activity} | Calories Burned: {calories}\n")
+        file.close()     
+
+def calculate_fare():
+    price = price_entry.get()
+    if price == "":
+        messagebox.showwarning("Missing Information", "Base ticket price is required!")
+        return
+    else:
+        try:
+            base_price = float(price)
+            if base_price < 0:
+                fare_result_label.config(text = "Price cannot be negative! ", fg = "red")
+                return
+            total = base_price
+            if baggage.get() == 1:
+                total += 35
+            if meal.get() == 1:
+                total += 15
+            if boarding.get() == 1:
+                total += 20
+            fare_result_label.config(text = f"Total Fare: ${total:.2f}", fg = "green")
+            file = open("user_logs.txt", "a")
+            file.write(f"[FLIGHT] Base: ${base_price:.2f} | Total Fare: ${total:.2f}\n")
+            file.close()  
+        except ValueError:
+            fare_result_label.config(text = "Error: Please enter a numeric price! ", fg = "red")
+            return 
+             
 root = tk.Tk()
 root.title("Personal Health & Travel Assistant")
 root.geometry("500x400")
@@ -13,16 +73,64 @@ l1 = tk.Label(root, text = "Select an application from the top menu to begin")
 l1.pack()
 
 fitness_page = tk.Frame(root)
-l2 = tk.Label(fitness_page, text = "Fitness Page")
-l2.pack()
+activity_label = tk.Label(fitness_page, text = "Activity Name: ")
+activity_label.grid(row = 0, column = 0, padx = 10, pady = 10)
+activity_entry = tk.Entry(fitness_page)
+activity_entry.grid(row = 0, column = 1, padx = 10, pady = 10)
+duration_label = tk.Label(fitness_page, text = "Duration (Minutes): ")
+duration_label.grid(row = 1, column = 0, padx = 10, pady = 10)
+duration_entry = tk.Entry(fitness_page)
+duration_entry.grid(row = 1, column = 1, padx = 10, pady = 10)
+
+intensity = tk.StringVar()
+intensity.set("Low")
+r1 = tk.Radiobutton(fitness_page, text = "Low", variable = intensity, value = "Low")
+r1.grid(row = 2, column = 0, padx = 10, pady = 10)
+r2 = tk.Radiobutton(fitness_page, text = "Medium", variable = intensity, value = "Medium")
+r2.grid(row = 2, column = 1, padx = 10, pady = 10)
+r3 = tk.Radiobutton(fitness_page, text = "High", variable = intensity, value = "High")
+r3.grid(row = 2, column = 2, padx = 10, pady = 10)
+
+workout_button = tk.Button(fitness_page, text = "Log Workout", command = log_workout)
+workout_button.grid(row = 3, column = 0, padx = 10, pady = 10)
+result_label = tk.Label(fitness_page, text = "")
+result_label.grid(row = 4, column = 0, padx = 10, pady = 10)
 
 flight_page = tk.Frame(root)
-l3 = tk.Label(flight_page, text = "Flight Page")
-l3.pack()
+price_label = tk.Label(flight_page, text = "Base Ticket Price ($): ")
+price_label.grid(row = 0, column = 0, padx = 10, pady = 10)
+price_entry = tk.Entry(flight_page)
+price_entry.grid(row = 0, column = 1, padx = 10, pady = 10)
+
+baggage = tk.IntVar()
+meal = tk.IntVar()
+boarding = tk.IntVar()
+c1 = tk.Checkbutton(flight_page, text = "Checked Baggage (+$35)", variable = baggage)
+c1.grid(row = 1, column = 0, padx = 10, pady = 10)
+c2 = tk.Checkbutton(flight_page, text = "In-Flight Meal (+$15)", variable = meal)
+c2.grid(row = 2, column = 0, padx = 10, pady = 10)
+c3 = tk.Checkbutton(flight_page, text = "Priority Boarding (+$20)", variable = boarding)
+c3.grid(row = 3, column = 0, padx = 10, pady = 10)
+
+fare_button = tk.Button(flight_page, text = "Calculate Total Fare", command = calculate_fare)
+fare_button.grid(row = 4, column = 0, padx = 10, pady = 10)
+fare_result_label = tk.Label(flight_page, text = "", font = ("Arial", 12, "bold"))
+fare_result_label.grid(row = 5, column = 0, padx = 10, pady = 10)
+
+status_label = tk.Label(root, text = "System Ready", fg = "blue")
+status_label.pack(side = "bottom")
 
 main_menu = tk.Menu(root)
 f1 = tk.Menu(main_menu)
+f1.add_command(label = "Reset Activity Logs", command = reset_logs)
+f1.add_command(label = "Exit Application", command = root.destroy)
+main_menu.add_cascade(label = "File", menu = f1)
 
+f2 = tk.Menu(main_menu)
+f2.add_command(label = "Fitness Tracker", command = lambda: show_page(fitness_page))
+f2.add_command(label = "Flight Fare Estimator", command = lambda: show_page(flight_page))
+main_menu.add_cascade(label = "Applications", menu = f2)
+root.config(menu = main_menu)
 
-
+show_page(fitness_page)
 root.mainloop()
